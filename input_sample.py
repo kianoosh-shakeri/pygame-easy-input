@@ -3,16 +3,14 @@
 Add your own desired way of output. Currently it just prints to the console"""
 
 import pygame
-from cytolk import tolk
-import input
+import pygame_easy_input
 
 pygame.init()
-tolk.load()
 
 pygame.display.set_caption("Input handler sample")
 screen=pygame.display.set_mode((640, 480))
 
-game_input=input.Input()
+game_input=pygame_easy_input.Input()
 clock=pygame.time.Clock()
 key_up_moment=pygame.time.get_ticks()
 
